@@ -7,8 +7,7 @@ public class Main {
                 Product.make(ProductState.IN_STOCK),
                 Product.make(ProductState.FOR_SALE),
                 Product.make(ProductState.SOLD),
-                Product.make(ProductState.SOLD),
-        }
+                Product.make(ProductState.SOLD)
+        };
     }
     }
-}
