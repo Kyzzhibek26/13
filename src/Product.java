@@ -18,6 +18,9 @@ public class Product {
         p.finalPrice = 0;
         return p;
     }
+    public String getId(){
+        return id;
+    }
 
     public int getFinalPrice() {
         return finalPrice;
@@ -35,8 +38,31 @@ public class Product {
         this.state = state;
     }
 
-    public void startSale(){};
-    public void risePrice(){};
-    public void withdraw(){};
-    public void giveToTheWinner(){};
+    public void startSale() throws Exception {
+        try{state.startSale(this);
+        } catch (Exception e) {
+        printMessage(this.id,e.getMessage());
+        }
+    };
+    public void risePrice() throws Exception {
+        try{state.risePrice(this);
+        } catch (Exception e) {
+            printMessage(this.id,e.getMessage());
+        }
+    };
+    public void withdraw() throws Exception {
+        try{state.withdraw(this);
+        } catch (Exception e) {
+            printMessage(this.id,e.getMessage());
+        }
+    };
+    public void giveToTheWinner() throws Exception {
+        try{state.giveToTheWinner(this);
+        } catch (Exception e) {
+            printMessage(this.id,e.getMessage());
+        }
+    };
+    private void printMessage(String id, String e){
+        System.out.printf("|%s| - %s", id,e);
+    }
 }
