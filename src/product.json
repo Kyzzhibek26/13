@@ -1,0 +1,30 @@
+[
+  {
+    "id" : 1,
+    "name" : "Pair of steel tongs",
+    "price" : 5,
+    "honorary code" : 20,
+    "state" : ""
+  },
+  {
+    "id" : 2,
+    "name" : "Lucky charm stone",
+    "price" : 6,
+    "honorary code" : 10,
+    "state" : ""
+  },
+  {
+    "id" : 3,
+    "name" : "Steel wool",
+    "price" : 7,
+    "honorary code" : 30,
+    "state" : ""
+  },
+  {
+    "id" : 4,
+    "name" : "Spool of yarn",
+    "price" : 8,
+    "honorary code" : 40,
+    "state" : ""
+  }
+]
