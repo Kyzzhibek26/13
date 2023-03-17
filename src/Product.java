@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Product {
     private String  id;
-    private String name;
+    private String surName;
     private int startPrice;
     private int finalPrice;
     private String honorary_code;
